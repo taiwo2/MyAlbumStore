@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { AlbumStorePage } from './app.po';
 
-describe('ng-store App', () => {
-  let page: AppPage;
+describe('album-store App', () => {
+  let page: AlbumStorePage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new AlbumStorePage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
